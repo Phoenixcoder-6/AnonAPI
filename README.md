@@ -43,7 +43,7 @@ In many real-world applications, especially in testing or demo environments, exp
 
 ## 🔠 Supported Scrambling Models
 
-### 1. Basic
+### 1. Basic Model: 
 
 - Description: Returns the input text as-is, with no modification.
 - Example:
@@ -53,7 +53,7 @@ In many real-world applications, especially in testing or demo environments, exp
                 Output: Hello World
 
 
-- 2. seeded
+### 2. Seeded Model: 
 
 - Description: Produces a consistent random shuffling of characters based on a fixed seed value.
 - Example:
@@ -63,7 +63,7 @@ In many real-world applications, especially in testing or demo environments, exp
          Output:    loHel  (consistent for seed=42)
 
 
-- 3. caesar
+### 3. Caesar Model: 
 
 - Description: Applies a Caesar cipher by shifting each letter by a fixed number of positions in the alphabet.
 - Example:
@@ -72,18 +72,18 @@ In many real-world applications, especially in testing or demo environments, exp
         Shift:     3
         Output:    Khoor
 
-- 4. rot13
 
+###4. Rot13 Model:
 - Description: A special case of Caesar cipher with a fixed shift of 13.
 - Example:
 
         Input:     Hello
         Output:    Uryyb
 
-- 5. reverse
+
+### 5. Reverse Model: 
 
 - Description: Reverses the input string.
-
 - Example:
 
 
@@ -91,87 +91,73 @@ In many real-world applications, especially in testing or demo environments, exp
         Output:    olleH
 
 
-- 6. piglatin
-Description: Converts English words into Pig Latin.
+### 6. Piglatin Model: 
 
-Example:
+- Description: Converts English words into Pig Latin.
+- Example:
 
-text
-Copy
-Edit
-Input:     Hello World
-Output:    elloHay orldWay
-7. vigenere
-Description: Applies the Vigenère cipher using a keyword.
+        Input:     Hello World
+        Output:    elloHay orldWay
 
-Example:
+### 7. Vigenere Model: 
 
-text
-Copy
-Edit
-Input:     Hello
-Keyword:   key
-Output:    Rijvs
-8. base64
-Description: Encodes the input text to Base64 format.
+- Description: Applies the Vigenère cipher using a keyword.
+- Example:
 
-Example:
+        Input:     Hello
+        Keyword:   key
+        Output:    Rijvs
 
-text
-Copy
-Edit
-Input:     Hello
-Output:    SGVsbG8=
-9. morse
-Description: Translates text to Morse code.
+### 8. Base64 Model: 
 
-Example:
+- Description: Encodes the input text to Base64 format.
+- Example:
 
-text
-Copy
-Edit
-Input:     Hello
-Output:    .... . .-.. .-.. ---
-10. binary
-Description: Converts each character to its binary (ASCII) representation.
+        Input:     Hello
+        Output:    SGVsbG8=
 
-Example:
+### 9. Morse Code Model: 
 
-text
-Copy
-Edit
-Input:     Hi
-Output:    01001000 01101001
-11. leet
-Description: Converts text to "leet speak" (1337), replacing letters with look-alike numbers or symbols.
+- Description: Translates text to Morse code.
+- Example:
 
-Example:
+        Input:     Hello
+        Output:    .... . .-.. .-.. ---
 
-text
-Copy
-Edit
-Input:     Hello
-Output:    H3ll0
-12. synonym
-Description: Replaces words with their synonyms using an NLP library like WordNet.
+### 10. Binary Code Model: 
 
-Example:
+- Description: Converts each character to its binary (ASCII) representation.
+- Example:
+  
+        Input:     Hi
+        Output:    01001000 01101001
 
-text
-Copy
-Edit
-Input:     Fast runner
-Output:    Quick sprinter
-13. emoji
-Description: Translates words or concepts into emojis when possible.
+### 11. leet Model: 
 
-Example:
+- Description: Converts text to "leet speak" (1337), replacing letters with look-alike numbers or symbols.
+- Example:
 
-text
-Copy
-Edit
-Input:     I love pizza
-Output:    I ❤️ 🍕
+        Input:     Hello
+        Output:    H3ll0
+
+### 12. Synonym Model:
+
+- Description: Replaces words with their synonyms using an NLP library like WordNet.
+- Example:
+  
+        Input:     Fast runner
+        Output:    Quick sprinter
+  
+### 13. Emoji Model: 
+
+- Description: Translates words or concepts into emojis when possible.
+- Example:
+
+        Input:     I love pizza
+        Output:    I ❤️ 🍕
+
+---
+
 
 ## ⚙️ Features
 
