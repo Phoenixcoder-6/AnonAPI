@@ -41,6 +41,139 @@ In many real-world applications, especially in testing or demo environments, exp
 
 ---
 
+## 🔠 Supported Scrambling Models
+
+
+- 1. basic
+
+- Description: Returns the input text as-is, with no modification.
+- Example:
+
+
+                Input:  Hello World
+                Output: Hello World
+
+
+- 2. seeded
+
+- Description: Produces a consistent random shuffling of characters based on a fixed seed value.
+- Example:
+
+         Input:     Hello
+         Seed:      42
+         Output:    loHel  (consistent for seed=42)
+
+
+- 3. caesar
+
+- Description: Applies a Caesar cipher by shifting each letter by a fixed number of positions in the alphabet.
+- Example:
+  
+        Input:     Hello
+        Shift:     3
+        Output:    Khoor
+
+- 4. rot13
+
+- Description: A special case of Caesar cipher with a fixed shift of 13.
+- Example:
+
+        Input:     Hello
+        Output:    Uryyb
+
+- 5. reverse
+
+- Description: Reverses the input string.
+
+- Example:
+
+
+        Input:     Hello
+        Output:    olleH
+
+
+- 6. piglatin
+Description: Converts English words into Pig Latin.
+
+Example:
+
+text
+Copy
+Edit
+Input:     Hello World
+Output:    elloHay orldWay
+7. vigenere
+Description: Applies the Vigenère cipher using a keyword.
+
+Example:
+
+text
+Copy
+Edit
+Input:     Hello
+Keyword:   key
+Output:    Rijvs
+8. base64
+Description: Encodes the input text to Base64 format.
+
+Example:
+
+text
+Copy
+Edit
+Input:     Hello
+Output:    SGVsbG8=
+9. morse
+Description: Translates text to Morse code.
+
+Example:
+
+text
+Copy
+Edit
+Input:     Hello
+Output:    .... . .-.. .-.. ---
+10. binary
+Description: Converts each character to its binary (ASCII) representation.
+
+Example:
+
+text
+Copy
+Edit
+Input:     Hi
+Output:    01001000 01101001
+11. leet
+Description: Converts text to "leet speak" (1337), replacing letters with look-alike numbers or symbols.
+
+Example:
+
+text
+Copy
+Edit
+Input:     Hello
+Output:    H3ll0
+12. synonym
+Description: Replaces words with their synonyms using an NLP library like WordNet.
+
+Example:
+
+text
+Copy
+Edit
+Input:     Fast runner
+Output:    Quick sprinter
+13. emoji
+Description: Translates words or concepts into emojis when possible.
+
+Example:
+
+text
+Copy
+Edit
+Input:     I love pizza
+Output:    I ❤️ 🍕
+
 ## ⚙️ Features
 
 - ✅ Scramble API
