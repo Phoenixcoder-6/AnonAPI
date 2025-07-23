@@ -7,6 +7,12 @@ AnonAPI is a privacy-focused, FastAPI-powered microservice designed for scrambli
 
 ---
 
+## Go and Check this Out
+
+http://127.0.0.1:8000/docs#/default/scramble_file_api_scramble_upload_post
+
+---
+
 ## 🚀 Project Goals
 
 - ✅ Build a lightweight API to scramble and unscramble sensitive text.
