@@ -43,7 +43,7 @@ In many real-world applications, especially in testing or demo environments, exp
 
 ## 🔠 Supported Scrambling Models
 
--- 1. Basic
+### 1. Basic
 
 - Description: Returns the input text as-is, with no modification.
 - Example:
